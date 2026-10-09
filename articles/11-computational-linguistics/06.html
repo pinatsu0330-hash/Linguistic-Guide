@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>计算句法学 | Computational Syntax · 语言学指南</title><link href="../../css/style.css" rel="stylesheet"/></head>
+<body>
+<header class="site-header"><a class="logo" href="../../index.html"><span class="logo-language" data-lang="zh">语言学指南</span><span class="logo-language" data-lang="en">Linguistics Guide</span></a><div aria-label="Language" class="language-switch" role="group"><button aria-pressed="false" data-set-language="en" type="button">EN</button><button aria-pressed="true" data-set-language="zh" type="button">中</button></div></header>
+<aside class="sidebar"><div class="sidebar-title"><span data-lang="zh">目录</span><span data-lang="en">Contents</span></div><nav>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../01-language/index.html"><span data-lang="zh">语言是什么</span><span class="nav-en" data-lang="en">What Is Language?</span></a></div><div class="nav-children">
+<a href="../01-language/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../01-language/01.html"><span data-lang="zh">语言知识</span><span class="nav-en" data-lang="en">Linguistic Knowledge</span></a>
+<a href="../01-language/02.html"><span data-lang="zh">语言的声音系统</span><span class="nav-en" data-lang="en">The Sound System of Language</span></a>
+<a href="../01-language/03.html"><span data-lang="zh">词</span><span class="nav-en" data-lang="en">Words</span></a>
+<a href="../01-language/04.html"><span data-lang="zh">形式与意义</span><span class="nav-en" data-lang="en">Form and Meaning</span></a>
+<a href="../01-language/05.html"><span data-lang="zh">语言的创造性</span><span class="nav-en" data-lang="en">Creativity of Language</span></a>
+<a href="../01-language/06.html"><span data-lang="zh">句子与非句子</span><span class="nav-en" data-lang="en">Sentences and Nonsentences</span></a>
+<a href="../01-language/07.html"><span data-lang="zh">什么是语法</span><span class="nav-en" data-lang="en">What Is Grammar?</span></a>
+<a href="../01-language/08.html"><span data-lang="zh">描写语法</span><span class="nav-en" data-lang="en">Descriptive Grammar</span></a>
+<a href="../01-language/09.html"><span data-lang="zh">规定语法</span><span class="nav-en" data-lang="en">Prescriptive Grammar</span></a>
+<a href="../01-language/10.html"><span data-lang="zh">教学语法</span><span class="nav-en" data-lang="en">Teaching Grammar</span></a>
+<a href="../01-language/11.html"><span data-lang="zh">普遍语法</span><span class="nav-en" data-lang="en">Universal Grammar</span></a>
+<a href="../01-language/12.html"><span data-lang="zh">语法的发展</span><span class="nav-en" data-lang="en">Grammar Development</span></a>
+<a href="../01-language/13.html"><span data-lang="zh">手语</span><span class="nav-en" data-lang="en">Sign Language</span></a>
+<a href="../01-language/14.html"><span data-lang="zh">动物语言</span><span class="nav-en" data-lang="en">Animal Language</span></a>
+<a href="../01-language/15.html"><span data-lang="zh">语言与思维</span><span class="nav-en" data-lang="en">Language and Thought</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../02-morphology/index.html"><span data-lang="zh">形态学</span><span class="nav-en" data-lang="en">Morphology</span></a></div><div class="nav-children">
+<a href="../02-morphology/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../02-morphology/01.html"><span data-lang="zh">内容词与功能词</span><span class="nav-en" data-lang="en">Content Words and Function Words</span></a>
+<a href="../02-morphology/02.html"><span data-lang="zh">词素</span><span class="nav-en" data-lang="en">Morphemes: The Minimal Units of Meaning</span></a>
+<a href="../02-morphology/03.html"><span data-lang="zh">自由词素与黏着词素</span><span class="nav-en" data-lang="en">Bound and Free Morphemes</span></a>
+<a href="../02-morphology/04.html"><span data-lang="zh">词缀</span><span class="nav-en" data-lang="en">Prefixes and Suffixes</span></a>
+<a href="../02-morphology/05.html"><span data-lang="zh">词根与词干</span><span class="nav-en" data-lang="en">Roots and Stems</span></a>
+<a href="../02-morphology/06.html"><span data-lang="zh">构词法</span><span class="nav-en" data-lang="en">Rules of Word Formation</span></a>
+<a href="../02-morphology/07.html"><span data-lang="zh">派生形态学</span><span class="nav-en" data-lang="en">Derivational Morphology</span></a>
+<a href="../02-morphology/08.html"><span data-lang="zh">屈折形态学</span><span class="nav-en" data-lang="en">Inflectional Morphology</span></a>
+<a href="../02-morphology/09.html"><span data-lang="zh">词的结构</span><span class="nav-en" data-lang="en">The Hierarchical Structure of Words</span></a>
+<a href="../02-morphology/10.html"><span data-lang="zh">能产性</span><span class="nav-en" data-lang="en">Rule Productivity</span></a>
+<a href="../02-morphology/11.html"><span data-lang="zh">例外</span><span class="nav-en" data-lang="en">Exceptions and Suppletions</span></a>
+<a href="../02-morphology/12.html"><span data-lang="zh">词汇空缺</span><span class="nav-en" data-lang="en">Lexical Gaps</span></a>
+<a href="../02-morphology/13.html"><span data-lang="zh">复合词</span><span class="nav-en" data-lang="en">Compounds</span></a>
+<a href="../02-morphology/14.html"><span data-lang="zh">手语形态学</span><span class="nav-en" data-lang="en">Sign Language Morphology</span></a>
+<a href="../02-morphology/15.html"><span data-lang="zh">形态学分析</span><span class="nav-en" data-lang="en">Morphological Analysis: Identifying Morphemes</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../03-syntax/index.html"><span data-lang="zh">句法学</span><span class="nav-en" data-lang="en">Syntax</span></a></div><div class="nav-children">
+<a href="../03-syntax/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../03-syntax/01.html"><span data-lang="zh">句法规则</span><span class="nav-en" data-lang="en">What the Syntax Rules Do</span></a>
+<a href="../03-syntax/02.html"><span data-lang="zh">合语法性</span><span class="nav-en" data-lang="en">What Grammaticality Is Not Based On</span></a>
+<a href="../03-syntax/03.html"><span data-lang="zh">句子结构</span><span class="nav-en" data-lang="en">Sentence Structure</span></a>
+<a href="../03-syntax/04.html"><span data-lang="zh">成分</span><span class="nav-en" data-lang="en">Constituents and Constituency Tests</span></a>
+<a href="../03-syntax/05.html"><span data-lang="zh">句法范畴</span><span class="nav-en" data-lang="en">Syntactic Categories</span></a>
+<a href="../03-syntax/06.html"><span data-lang="zh">短语结构树</span><span class="nav-en" data-lang="en">Phrase Structure Trees</span></a>
+<a href="../03-syntax/07.html"><span data-lang="zh">构建句法树</span><span class="nav-en" data-lang="en">Building Phrase Structure Trees</span></a>
+<a href="../03-syntax/08.html"><span data-lang="zh">递归</span><span class="nav-en" data-lang="en">The Infinity of Language: Recursive Rules</span></a>
+<a href="../03-syntax/09.html"><span data-lang="zh">中心语</span><span class="nav-en" data-lang="en">What Heads the Sentence</span></a>
+<a href="../03-syntax/10.html"><span data-lang="zh">结构歧义</span><span class="nav-en" data-lang="en">Structural Ambiguities</span></a>
+<a href="../03-syntax/11.html"><span data-lang="zh">更多句法结构</span><span class="nav-en" data-lang="en">More Structures</span></a>
+<a href="../03-syntax/12.html"><span data-lang="zh">转换分析</span><span class="nav-en" data-lang="en">Transformational Analysis</span></a>
+<a href="../03-syntax/13.html"><span data-lang="zh">结构依存</span><span class="nav-en" data-lang="en">The Structure Dependency of Rules</span></a>
+<a href="../03-syntax/14.html"><span data-lang="zh">普遍语法：原则与参数</span><span class="nav-en" data-lang="en">UG Principles and Parameters</span></a>
+<a href="../03-syntax/15.html"><span data-lang="zh">手语句法</span><span class="nav-en" data-lang="en">Sign Language Syntax</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../04-semantics/index.html"><span data-lang="zh">语义学</span><span class="nav-en" data-lang="en">Semantics</span></a></div><div class="nav-children">
+<a href="../04-semantics/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../04-semantics/01.html"><span data-lang="zh">句子意义</span><span class="nav-en" data-lang="en">What Speakers Know about Sentence Meaning</span></a>
+<a href="../04-semantics/02.html"><span data-lang="zh">真值</span><span class="nav-en" data-lang="en">Truth</span></a>
+<a href="../04-semantics/03.html"><span data-lang="zh">蕴涵</span><span class="nav-en" data-lang="en">Entailment and Related Notions</span></a>
+<a href="../04-semantics/04.html"><span data-lang="zh">歧义</span><span class="nav-en" data-lang="en">Ambiguity</span></a>
+<a href="../04-semantics/05.html"><span data-lang="zh">组合语义学</span><span class="nav-en" data-lang="en">Compositional Semantics</span></a>
+<a href="../04-semantics/06.html"><span data-lang="zh">语义规则</span><span class="nav-en" data-lang="en">Semantic Rules</span></a>
+<a href="../04-semantics/07.html"><span data-lang="zh">反常</span><span class="nav-en" data-lang="en">Anomaly</span></a>
+<a href="../04-semantics/08.html"><span data-lang="zh">隐喻</span><span class="nav-en" data-lang="en">Metaphor</span></a>
+<a href="../04-semantics/09.html"><span data-lang="zh">习语</span><span class="nav-en" data-lang="en">Idioms</span></a>
+<a href="../04-semantics/10.html"><span data-lang="zh">词汇语义学</span><span class="nav-en" data-lang="en">Lexical Semantics (Word Meanings)</span></a>
+<a href="../04-semantics/11.html"><span data-lang="zh">指称</span><span class="nav-en" data-lang="en">Reference</span></a>
+<a href="../04-semantics/12.html"><span data-lang="zh">意义</span><span class="nav-en" data-lang="en">Sense</span></a>
+<a href="../04-semantics/13.html"><span data-lang="zh">词汇关系</span><span class="nav-en" data-lang="en">Lexical Relations</span></a>
+<a href="../04-semantics/14.html"><span data-lang="zh">语义特征</span><span class="nav-en" data-lang="en">Semantic Features</span></a>
+<a href="../04-semantics/15.html"><span data-lang="zh">论元结构</span><span class="nav-en" data-lang="en">Argument Structure</span></a>
+<a href="../04-semantics/16.html"><span data-lang="zh">题元角色</span><span class="nav-en" data-lang="en">Thematic Roles</span></a>
+<a href="../04-semantics/17.html"><span data-lang="zh">语用学</span><span class="nav-en" data-lang="en">Pragmatics</span></a>
+<a href="../04-semantics/18.html"><span data-lang="zh">指示</span><span class="nav-en" data-lang="en">Pronouns and Other Deictic Words</span></a>
+<a href="../04-semantics/19.html"><span data-lang="zh">会话含意</span><span class="nav-en" data-lang="en">Implicature</span></a>
+<a href="../04-semantics/20.html"><span data-lang="zh">合作原则与准则</span><span class="nav-en" data-lang="en">Maxims of Conversation</span></a>
+<a href="../04-semantics/21.html"><span data-lang="zh">预设</span><span class="nav-en" data-lang="en">Presupposition</span></a>
+<a href="../04-semantics/22.html"><span data-lang="zh">言语行为</span><span class="nav-en" data-lang="en">Speech Acts</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../05-phonetics/index.html"><span data-lang="zh">语音学</span><span class="nav-en" data-lang="en">Phonetics</span></a></div><div class="nav-children">
+<a href="../05-phonetics/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../05-phonetics/01.html"><span data-lang="zh">语音片段</span><span class="nav-en" data-lang="en">Sound Segments</span></a>
+<a href="../05-phonetics/02.html"><span data-lang="zh">语音同一性</span><span class="nav-en" data-lang="en">Identity of Speech Sounds</span></a>
+<a href="../05-phonetics/03.html"><span data-lang="zh">国际音标</span><span class="nav-en" data-lang="en">The Phonetic Alphabet</span></a>
+<a href="../05-phonetics/04.html"><span data-lang="zh">发音语音学</span><span class="nav-en" data-lang="en">Articulatory Phonetics</span></a>
+<a href="../05-phonetics/05.html"><span data-lang="zh">辅音</span><span class="nav-en" data-lang="en">Consonants</span></a>
+<a href="../05-phonetics/06.html"><span data-lang="zh">发音部位</span><span class="nav-en" data-lang="en">Place of Articulation</span></a>
+<a href="../05-phonetics/07.html"><span data-lang="zh">发音方式</span><span class="nav-en" data-lang="en">Manner of Articulation</span></a>
+<a href="../05-phonetics/08.html"><span data-lang="zh">元音</span><span class="nav-en" data-lang="en">Vowels</span></a>
+<a href="../05-phonetics/09.html"><span data-lang="zh">舌位</span><span class="nav-en" data-lang="en">Tongue Position</span></a>
+<a href="../05-phonetics/10.html"><span data-lang="zh">唇形</span><span class="nav-en" data-lang="en">Lip Rounding</span></a>
+<a href="../05-phonetics/11.html"><span data-lang="zh">双元音</span><span class="nav-en" data-lang="en">Diphthongs</span></a>
+<a href="../05-phonetics/12.html"><span data-lang="zh">鼻化</span><span class="nav-en" data-lang="en">Nasalization of Vowels</span></a>
+<a href="../05-phonetics/13.html"><span data-lang="zh">紧元音与松元音</span><span class="nav-en" data-lang="en">Tense and Lax Vowels</span></a>
+<a href="../05-phonetics/14.html"><span data-lang="zh">语音类别</span><span class="nav-en" data-lang="en">Major Phonetic Classes</span></a>
+<a href="../05-phonetics/15.html"><span data-lang="zh">韵律特征</span><span class="nav-en" data-lang="en">Prosodic Features</span></a>
+<a href="../05-phonetics/16.html"><span data-lang="zh">声调与语调</span><span class="nav-en" data-lang="en">Tone and Intonation</span></a>
+<a href="../05-phonetics/17.html"><span data-lang="zh">手语语音学</span><span class="nav-en" data-lang="en">The “Phonetics” of Signed Languages</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../06-phonology/index.html"><span data-lang="zh">音系学</span><span class="nav-en" data-lang="en">Phonology</span></a></div><div class="nav-children">
+<a href="../06-phonology/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../06-phonology/01.html"><span data-lang="zh">词素的发音</span><span class="nav-en" data-lang="en">The Pronunciation of Morphemes</span></a>
+<a href="../06-phonology/02.html"><span data-lang="zh">复数的发音</span><span class="nav-en" data-lang="en">The Pronunciation of Plurals</span></a>
+<a href="../06-phonology/03.html"><span data-lang="zh">异形词素</span><span class="nav-en" data-lang="en">Additional Examples of Allomorphs</span></a>
+<a href="../06-phonology/04.html"><span data-lang="zh">音位</span><span class="nav-en" data-lang="en">Phonemes: The Phonological Units of Language</span></a>
+<a href="../06-phonology/05.html"><span data-lang="zh">音位的判定</span><span class="nav-en" data-lang="en">Phonemes and How to Find Them</span></a>
+<a href="../06-phonology/06.html"><span data-lang="zh">互补分布</span><span class="nav-en" data-lang="en">Complementary Distribution</span></a>
+<a href="../06-phonology/07.html"><span data-lang="zh">区别特征</span><span class="nav-en" data-lang="en">Distinctive Features of Phonemes</span></a>
+<a href="../06-phonology/08.html"><span data-lang="zh">特征值</span><span class="nav-en" data-lang="en">Feature Values</span></a>
+<a href="../06-phonology/09.html"><span data-lang="zh">非区别性特征</span><span class="nav-en" data-lang="en">Nondistinctive Features</span></a>
+<a href="../06-phonology/10.html"><span data-lang="zh">自然类</span><span class="nav-en" data-lang="en">Natural Classes of Speech Sounds</span></a>
+<a href="../06-phonology/11.html"><span data-lang="zh">音系规则</span><span class="nav-en" data-lang="en">The Rules of Phonology</span></a>
+<a href="../06-phonology/12.html"><span data-lang="zh">特征改变</span><span class="nav-en" data-lang="en">Feature-Changing Rules</span></a>
+<a href="../06-phonology/13.html"><span data-lang="zh">同化</span><span class="nav-en" data-lang="en">Assimilation Rules</span></a>
+<a href="../06-phonology/14.html"><span data-lang="zh">异化</span><span class="nav-en" data-lang="en">Dissimilation Rules</span></a>
+<a href="../06-phonology/15.html"><span data-lang="zh">插入与删除</span><span class="nav-en" data-lang="en">Segment Insertion and Deletion Rules</span></a>
+<a href="../06-phonology/16.html"><span data-lang="zh">音系功能</span><span class="nav-en" data-lang="en">The Function of Phonological Rules</span></a>
+<a href="../06-phonology/17.html"><span data-lang="zh">韵律音系学</span><span class="nav-en" data-lang="en">Prosodic Phonology</span></a>
+<a href="../06-phonology/18.html"><span data-lang="zh">音节</span><span class="nav-en" data-lang="en">Syllable Structure</span></a>
+<a href="../06-phonology/19.html"><span data-lang="zh">词重音</span><span class="nav-en" data-lang="en">Word Stress</span></a>
+<a href="../06-phonology/20.html"><span data-lang="zh">句重音</span><span class="nav-en" data-lang="en">Sentence and Phrase Stress</span></a>
+<a href="../06-phonology/21.html"><span data-lang="zh">语调</span><span class="nav-en" data-lang="en">Intonation</span></a>
+<a href="../06-phonology/22.html"><span data-lang="zh">序列限制</span><span class="nav-en" data-lang="en">Sequential Constraints of Phonemes</span></a>
+<a href="../06-phonology/23.html"><span data-lang="zh">最优性理论</span><span class="nav-en" data-lang="en">Optimality Theory</span></a>
+<a href="../06-phonology/24.html"><span data-lang="zh">音系分析</span><span class="nav-en" data-lang="en">Phonological Analysis</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../07-sociolinguistics/index.html"><span data-lang="zh">社会语言学</span><span class="nav-en" data-lang="en">Sociolinguistics</span></a></div><div class="nav-children">
+<a href="../07-sociolinguistics/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../07-sociolinguistics/01.html"><span data-lang="zh">方言</span><span class="nav-en" data-lang="en">Dialects</span></a>
+<a href="../07-sociolinguistics/02.html"><span data-lang="zh">地域方言</span><span class="nav-en" data-lang="en">Regional Dialects</span></a>
+<a href="../07-sociolinguistics/03.html"><span data-lang="zh">社会方言</span><span class="nav-en" data-lang="en">Social Dialects</span></a>
+<a href="../07-sociolinguistics/04.html"><span data-lang="zh">标准语言</span><span class="nav-en" data-lang="en">The “Standard”</span></a>
+<a href="../07-sociolinguistics/05.html"><span data-lang="zh">非裔美国英语</span><span class="nav-en" data-lang="en">African American English</span></a>
+<a href="../07-sociolinguistics/06.html"><span data-lang="zh">拉丁裔英语</span><span class="nav-en" data-lang="en">Latino (Hispanic) English</span></a>
+<a href="../07-sociolinguistics/07.html"><span data-lang="zh">性别语言</span><span class="nav-en" data-lang="en">Genderlects</span></a>
+<a href="../07-sociolinguistics/08.html"><span data-lang="zh">社会语言学分析</span><span class="nav-en" data-lang="en">Sociolinguistic Analysis</span></a>
+<a href="../07-sociolinguistics/09.html"><span data-lang="zh">语言接触</span><span class="nav-en" data-lang="en">Languages in Contact</span></a>
+<a href="../07-sociolinguistics/10.html"><span data-lang="zh">通用语</span><span class="nav-en" data-lang="en">Lingua Francas</span></a>
+<a href="../07-sociolinguistics/11.html"><span data-lang="zh">洋泾浜语与克里奥尔语</span><span class="nav-en" data-lang="en">Contact Languages: Pidgins and Creoles</span></a>
+<a href="../07-sociolinguistics/12.html"><span data-lang="zh">双语</span><span class="nav-en" data-lang="en">Bilingualism</span></a>
+<a href="../07-sociolinguistics/13.html"><span data-lang="zh">语码转换</span><span class="nav-en" data-lang="en">Codeswitching</span></a>
+<a href="../07-sociolinguistics/14.html"><span data-lang="zh">语言与教育</span><span class="nav-en" data-lang="en">Language and Education</span></a>
+<a href="../07-sociolinguistics/15.html"><span data-lang="zh">语言使用</span><span class="nav-en" data-lang="en">Language in Use</span></a>
+<a href="../07-sociolinguistics/16.html"><span data-lang="zh">语言风格</span><span class="nav-en" data-lang="en">Styles</span></a>
+<a href="../07-sociolinguistics/17.html"><span data-lang="zh">俚语</span><span class="nav-en" data-lang="en">Slang</span></a>
+<a href="../07-sociolinguistics/18.html"><span data-lang="zh">行话与暗语</span><span class="nav-en" data-lang="en">Jargon and Argot</span></a>
+<a href="../07-sociolinguistics/19.html"><span data-lang="zh">禁忌语</span><span class="nav-en" data-lang="en">Taboo or Not Taboo?</span></a>
+<a href="../07-sociolinguistics/20.html"><span data-lang="zh">委婉语</span><span class="nav-en" data-lang="en">Euphemisms</span></a>
+<a href="../07-sociolinguistics/21.html"><span data-lang="zh">种族与民族称谓</span><span class="nav-en" data-lang="en">Racial and National Epithets</span></a>
+<a href="../07-sociolinguistics/22.html"><span data-lang="zh">性别歧视语言</span><span class="nav-en" data-lang="en">Language and Sexism</span></a>
+<a href="../07-sociolinguistics/23.html"><span data-lang="zh">有标记与无标记</span><span class="nav-en" data-lang="en">Marked and Unmarked Forms</span></a>
+<a href="../07-sociolinguistics/24.html"><span data-lang="zh">秘密语言与语言游戏</span><span class="nav-en" data-lang="en">Secret Languages and Language Games</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../08-language-change/index.html"><span data-lang="zh">语言变化</span><span class="nav-en" data-lang="en">Language Change</span></a></div><div class="nav-children">
+<a href="../08-language-change/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../08-language-change/01.html"><span data-lang="zh">声音变化</span><span class="nav-en" data-lang="en">The Regularity of Sound Change</span></a>
+<a href="../08-language-change/02.html"><span data-lang="zh">声音对应</span><span class="nav-en" data-lang="en">Sound Correspondences</span></a>
+<a href="../08-language-change/03.html"><span data-lang="zh">原始语言</span><span class="nav-en" data-lang="en">Ancestral Protolanguages</span></a>
+<a href="../08-language-change/04.html"><span data-lang="zh">音系变化</span><span class="nav-en" data-lang="en">Phonological Change</span></a>
+<a href="../08-language-change/05.html"><span data-lang="zh">元音大推移</span><span class="nav-en" data-lang="en">The Great Vowel Shift</span></a>
+<a href="../08-language-change/06.html"><span data-lang="zh">形态变化</span><span class="nav-en" data-lang="en">Morphological Change</span></a>
+<a href="../08-language-change/07.html"><span data-lang="zh">句法变化</span><span class="nav-en" data-lang="en">Syntactic Change</span></a>
+<a href="../08-language-change/08.html"><span data-lang="zh">词汇变化</span><span class="nav-en" data-lang="en">Lexical Change</span></a>
+<a href="../08-language-change/09.html"><span data-lang="zh">借词</span><span class="nav-en" data-lang="en">Borrowings or Loan Words</span></a>
+<a href="../08-language-change/10.html"><span data-lang="zh">词语消失</span><span class="nav-en" data-lang="en">Loss of Words</span></a>
+<a href="../08-language-change/11.html"><span data-lang="zh">语义变化</span><span class="nav-en" data-lang="en">Semantic Change</span></a>
+<a href="../08-language-change/12.html"><span data-lang="zh">重建失传语言</span><span class="nav-en" data-lang="en">Reconstructing “Dead” Languages</span></a>
+<a href="../08-language-change/13.html"><span data-lang="zh">比较重建</span><span class="nav-en" data-lang="en">Comparative Reconstruction</span></a>
+<a href="../08-language-change/14.html"><span data-lang="zh">历史证据</span><span class="nav-en" data-lang="en">Historical Evidence</span></a>
+<a href="../08-language-change/15.html"><span data-lang="zh">灭绝与濒危语言</span><span class="nav-en" data-lang="en">Extinct and Endangered Languages</span></a>
+<a href="../08-language-change/16.html"><span data-lang="zh">语言的谱系分类</span><span class="nav-en" data-lang="en">The Genetic Classification of Languages</span></a>
+<a href="../08-language-change/17.html"><span data-lang="zh">世界语言</span><span class="nav-en" data-lang="en">Languages of the World</span></a>
+<a href="../08-language-change/18.html"><span data-lang="zh">语言类型</span><span class="nav-en" data-lang="en">Types of Languages</span></a>
+<a href="../08-language-change/19.html"><span data-lang="zh">为什么语言会变化</span><span class="nav-en" data-lang="en">Why Do Languages Change?</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../09-language-acquisition/index.html"><span data-lang="zh">语言习得</span><span class="nav-en" data-lang="en">Language Acquisition</span></a></div><div class="nav-children">
+<a href="../09-language-acquisition/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../09-language-acquisition/01.html"><span data-lang="zh">语言能力</span><span class="nav-en" data-lang="en">The Linguistic Capacity of Children</span></a>
+<a href="../09-language-acquisition/02.html"><span data-lang="zh">语言习得阶段</span><span class="nav-en" data-lang="en">Stages in Language Acquisition</span></a>
+<a href="../09-language-acquisition/03.html"><span data-lang="zh">言语发展</span><span class="nav-en" data-lang="en">The Perception and Production of Speech Sounds</span></a>
+<a href="../09-language-acquisition/04.html"><span data-lang="zh">咿呀学语</span><span class="nav-en" data-lang="en">Babbling</span></a>
+<a href="../09-language-acquisition/05.html"><span data-lang="zh">第一批词</span><span class="nav-en" data-lang="en">First Words</span></a>
+<a href="../09-language-acquisition/06.html"><span data-lang="zh">语音分割</span><span class="nav-en" data-lang="en">Segmenting the Speech Stream</span></a>
+<a href="../09-language-acquisition/07.html"><span data-lang="zh">音系习得</span><span class="nav-en" data-lang="en">The Acquisition of Phonology</span></a>
+<a href="../09-language-acquisition/08.html"><span data-lang="zh">词义习得</span><span class="nav-en" data-lang="en">The Acquisition of Word Meaning</span></a>
+<a href="../09-language-acquisition/09.html"><span data-lang="zh">形态习得</span><span class="nav-en" data-lang="en">The Acquisition of Morphology</span></a>
+<a href="../09-language-acquisition/10.html"><span data-lang="zh">句法习得</span><span class="nav-en" data-lang="en">The Acquisition of Syntax</span></a>
+<a href="../09-language-acquisition/11.html"><span data-lang="zh">语用习得</span><span class="nav-en" data-lang="en">The Acquisition of Pragmatics</span></a>
+<a href="../09-language-acquisition/12.html"><span data-lang="zh">助动词案例</span><span class="nav-en" data-lang="en">The Development of Auxiliaries: A Case Study</span></a>
+<a href="../09-language-acquisition/13.html"><span data-lang="zh">参数</span><span class="nav-en" data-lang="en">Setting Parameters</span></a>
+<a href="../09-language-acquisition/14.html"><span data-lang="zh">手语习得</span><span class="nav-en" data-lang="en">The Acquisition of Signed Languages</span></a>
+<a href="../09-language-acquisition/15.html"><span data-lang="zh">成人输入</span><span class="nav-en" data-lang="en">The Role of the Linguistic Environment: Adult Input</span></a>
+<a href="../09-language-acquisition/16.html"><span data-lang="zh">模仿、强化与类推</span><span class="nav-en" data-lang="en">The Role of Imitation, Reinforcement, and Analogy</span></a>
+<a href="../09-language-acquisition/17.html"><span data-lang="zh">结构化输入</span><span class="nav-en" data-lang="en">The Role of Structured Input</span></a>
+<a href="../09-language-acquisition/18.html"><span data-lang="zh">双语儿童</span><span class="nav-en" data-lang="en">Childhood Bilingualism</span></a>
+<a href="../09-language-acquisition/19.html"><span data-lang="zh">双语习得理论</span><span class="nav-en" data-lang="en">Theories of Bilingual Development</span></a>
+<a href="../09-language-acquisition/20.html"><span data-lang="zh">两个单语者模型</span><span class="nav-en" data-lang="en">Two Monolinguals in One Head</span></a>
+<a href="../09-language-acquisition/21.html"><span data-lang="zh">输入</span><span class="nav-en" data-lang="en">The Role of Input</span></a>
+<a href="../09-language-acquisition/22.html"><span data-lang="zh">双语的认知影响</span><span class="nav-en" data-lang="en">Cognitive Effects of Bilingualism</span></a>
+<a href="../09-language-acquisition/23.html"><span data-lang="zh">第二语言习得</span><span class="nav-en" data-lang="en">Second Language Acquisition</span></a>
+<a href="../09-language-acquisition/24.html"><span data-lang="zh">第一语言影响</span><span class="nav-en" data-lang="en">Native Language Influence in L2 Acquisition</span></a>
+<a href="../09-language-acquisition/25.html"><span data-lang="zh">创造性</span><span class="nav-en" data-lang="en">The Creative Component of L2 Acquisition</span></a>
+<a href="../09-language-acquisition/26.html"><span data-lang="zh">传承语学习者</span><span class="nav-en" data-lang="en">Heritage Language Learners</span></a>
+<a href="../09-language-acquisition/27.html"><span data-lang="zh">关键期</span><span class="nav-en" data-lang="en">Is There a Critical Period for L2 Acquisition?</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../10-language-processing/index.html"><span data-lang="zh">语言加工</span><span class="nav-en" data-lang="en">Language Processing</span></a></div><div class="nav-children">
+<a href="../10-language-processing/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../10-language-processing/01.html"><span data-lang="zh">语言理解</span><span class="nav-en" data-lang="en">Comprehension</span></a>
+<a href="../10-language-processing/02.html"><span data-lang="zh">言语信号</span><span class="nav-en" data-lang="en">The Speech Signal</span></a>
+<a href="../10-language-processing/03.html"><span data-lang="zh">言语感知</span><span class="nav-en" data-lang="en">Speech Perception</span></a>
+<a href="../10-language-processing/04.html"><span data-lang="zh">自下而上与自上而下</span><span class="nav-en" data-lang="en">Bottom-up and Top-down Models</span></a>
+<a href="../10-language-processing/05.html"><span data-lang="zh">词汇通达</span><span class="nav-en" data-lang="en">Lexical Access</span></a>
+<a href="../10-language-processing/06.html"><span data-lang="zh">词汇识别</span><span class="nav-en" data-lang="en">Word Recognition</span></a>
+<a href="../10-language-processing/07.html"><span data-lang="zh">句法加工</span><span class="nav-en" data-lang="en">Syntactic Processing</span></a>
+<a href="../10-language-processing/08.html"><span data-lang="zh">言语产生</span><span class="nav-en" data-lang="en">Speech Production</span></a>
+<a href="../10-language-processing/09.html"><span data-lang="zh">词汇选择</span><span class="nav-en" data-lang="en">Lexical Selection</span></a>
+<a href="../10-language-processing/10.html"><span data-lang="zh">规则的应用与误用</span><span class="nav-en" data-lang="en">Application and Misapplication of Rules</span></a>
+<a href="../10-language-processing/11.html"><span data-lang="zh">规划单位</span><span class="nav-en" data-lang="en">Planning Units</span></a>
+<a href="../10-language-processing/12.html"><span data-lang="zh">语言与大脑</span><span class="nav-en" data-lang="en">Brain and Language</span></a>
+<a href="../10-language-processing/13.html"><span data-lang="zh">人脑</span><span class="nav-en" data-lang="en">The Human Brain</span></a>
+<a href="../10-language-processing/14.html"><span data-lang="zh">语言定位</span><span class="nav-en" data-lang="en">The Localization of Language in the Brain</span></a>
+<a href="../10-language-processing/15.html"><span data-lang="zh">失语症</span><span class="nav-en" data-lang="en">Aphasia</span></a>
+<a href="../10-language-processing/16.html"><span data-lang="zh">裂脑</span><span class="nav-en" data-lang="en">Split Brains</span></a>
+<a href="../10-language-processing/17.html"><span data-lang="zh">双耳分听</span><span class="nav-en" data-lang="en">Dichotic Listening</span></a>
+<a href="../10-language-processing/18.html"><span data-lang="zh">事件相关电位</span><span class="nav-en" data-lang="en">Event-Related Potentials</span></a>
+<a href="../10-language-processing/19.html"><span data-lang="zh">语法的神经证据</span><span class="nav-en" data-lang="en">Neural Evidence of Grammatical Phenomena</span></a>
+<a href="../10-language-processing/20.html"><span data-lang="zh">语音的神经语言学</span><span class="nav-en" data-lang="en">Neurolinguistic Studies of Speech Sounds</span></a>
+<a href="../10-language-processing/21.html"><span data-lang="zh">句子结构的神经语言学</span><span class="nav-en" data-lang="en">Neurolinguistic Studies of Sentence Structure</span></a>
+<a href="../10-language-processing/22.html"><span data-lang="zh">大脑发展</span><span class="nav-en" data-lang="en">Language and Brain Development</span></a>
+<a href="../10-language-processing/23.html"><span data-lang="zh">侧化</span><span class="nav-en" data-lang="en">Left Hemisphere Lateralization for Language in Young Children</span></a>
+<a href="../10-language-processing/24.html"><span data-lang="zh">脑可塑性</span><span class="nav-en" data-lang="en">Brain Plasticity</span></a>
+<a href="../10-language-processing/25.html"><span data-lang="zh">关键期</span><span class="nav-en" data-lang="en">Is There a Critical Period for L2 Acquisition?</span></a>
+<a href="../10-language-processing/26.html"><span data-lang="zh">模块化心智</span><span class="nav-en" data-lang="en">The Modular Mind: Dissociations of Language and Cognition</span></a>
+<a href="../10-language-processing/27.html"><span data-lang="zh">学者症候群</span><span class="nav-en" data-lang="en">Linguistic Savants</span></a>
+<a href="../10-language-processing/28.html"><span data-lang="zh">特异性语言障碍</span><span class="nav-en" data-lang="en">Specific Language Impairment</span></a>
+<a href="../10-language-processing/29.html"><span data-lang="zh">语言能力的遗传基础</span><span class="nav-en" data-lang="en">Genetic Basis of Language</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../11-computational-linguistics/index.html"><span data-lang="zh">计算语言学</span><span class="nav-en" data-lang="en">Computational Linguistics</span></a></div><div class="nav-children">
+<a href="index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="01.html"><span data-lang="zh">计算机说话与倾听</span><span class="nav-en" data-lang="en">Computers That Talk and Listen</span></a>
+<a href="02.html"><span data-lang="zh">计算语音学与音系学</span><span class="nav-en" data-lang="en">Computational Phonetics and Phonology</span></a>
+<a href="03.html"><span data-lang="zh">语音识别</span><span class="nav-en" data-lang="en">Speech Recognition</span></a>
+<a href="04.html"><span data-lang="zh">语音合成</span><span class="nav-en" data-lang="en">Speech Synthesis</span></a>
+<a href="05.html"><span data-lang="zh">计算形态学</span><span class="nav-en" data-lang="en">Computational Morphology</span></a>
+<a href="06.html"><span data-lang="zh">计算句法学</span><span class="nav-en" data-lang="en">Computational Syntax</span></a>
+<a href="07.html"><span data-lang="zh">计算语义学</span><span class="nav-en" data-lang="en">Computational Semantics</span></a>
+<a href="08.html"><span data-lang="zh">计算语用学</span><span class="nav-en" data-lang="en">Computational Pragmatics</span></a>
+<a href="09.html"><span data-lang="zh">计算手语</span><span class="nav-en" data-lang="en">Computational Sign Language</span></a>
+<a href="10.html"><span data-lang="zh">应用</span><span class="nav-en" data-lang="en">Applications of Computational Linguistics</span></a>
+<a href="11.html"><span data-lang="zh">语法模型</span><span class="nav-en" data-lang="en">Computer Models of Grammar</span></a>
+<a href="12.html"><span data-lang="zh">频率与语料库</span><span class="nav-en" data-lang="en">Frequency Analysis</span></a>
+<a href="13.html"><span data-lang="zh">一致性与共现</span><span class="nav-en" data-lang="en">Concordances and Collocations</span></a>
+<a href="14.html"><span data-lang="zh">计算词典学</span><span class="nav-en" data-lang="en">Computational Lexicography</span></a>
+<a href="15.html"><span data-lang="zh">文化组学</span><span class="nav-en" data-lang="en">The Culturomic Revolution</span></a>
+<a href="16.html"><span data-lang="zh">推特语言学</span><span class="nav-en" data-lang="en">Twitterology</span></a>
+<a href="17.html"><span data-lang="zh">信息检索</span><span class="nav-en" data-lang="en">Information Retrieval</span></a>
+<a href="18.html"><span data-lang="zh">自动摘要</span><span class="nav-en" data-lang="en">Summarization</span></a>
+<a href="19.html"><span data-lang="zh">拼写检查</span><span class="nav-en" data-lang="en">Spell Checkers</span></a>
+<a href="20.html"><span data-lang="zh">机器翻译</span><span class="nav-en" data-lang="en">Machine Translation</span></a>
+<a href="21.html"><span data-lang="zh">计算取证语言学</span><span class="nav-en" data-lang="en">Computational Forensic Linguistics</span></a>
+<a href="22.html"><span data-lang="zh">商标</span><span class="nav-en" data-lang="en">Trademarks</span></a>
+<a href="23.html"><span data-lang="zh">法律术语解释</span><span class="nav-en" data-lang="en">Interpreting Legal Terms</span></a>
+<a href="24.html"><span data-lang="zh">说话人识别</span><span class="nav-en" data-lang="en">Speaker Identification</span></a>
+</div></div>
+<div class="nav-section"><div class="nav-heading"><button aria-label="展开或收起目录" class="nav-toggle"><span class="arrow">▸</span></button><a class="nav-title" href="../12-writing/index.html"><span data-lang="zh">文字</span><span class="nav-en" data-lang="en">Writing</span></a></div><div class="nav-children">
+<a href="../12-writing/index.html"><span data-lang="zh">章节总览</span> <span class="nav-en" data-lang="en">Chapter Overview</span></a>
+<a href="../12-writing/01.html"><span data-lang="zh">文字的历史</span><span class="nav-en" data-lang="en">The History of Writing</span></a>
+<a href="../12-writing/02.html"><span data-lang="zh">象形文字与表意文字</span><span class="nav-en" data-lang="en">Pictograms and Ideograms</span></a>
+<a href="../12-writing/03.html"><span data-lang="zh">楔形文字</span><span class="nav-en" data-lang="en">Cuneiform</span></a>
+<a href="../12-writing/04.html"><span data-lang="zh">借音原则</span><span class="nav-en" data-lang="en">The Rebus Principle</span></a>
+<a href="../12-writing/05.html"><span data-lang="zh">从象形文字到字母</span><span class="nav-en" data-lang="en">From Hieroglyphics to the Alphabet</span></a>
+<a href="../12-writing/06.html"><span data-lang="zh">现代文字系统</span><span class="nav-en" data-lang="en">Modern Writing Systems</span></a>
+<a href="../12-writing/07.html"><span data-lang="zh">语素文字</span><span class="nav-en" data-lang="en">Word Writing</span></a>
+<a href="../12-writing/08.html"><span data-lang="zh">音节文字</span><span class="nav-en" data-lang="en">Syllabic Writing</span></a>
+<a href="../12-writing/09.html"><span data-lang="zh">辅音音素文字</span><span class="nav-en" data-lang="en">Consonantal Writing</span></a>
+<a href="../12-writing/10.html"><span data-lang="zh">字母文字</span><span class="nav-en" data-lang="en">Alphabetic Writing</span></a>
+<a href="../12-writing/11.html"><span data-lang="zh">文字与言语</span><span class="nav-en" data-lang="en">Writing and Speech</span></a>
+<a href="../12-writing/12.html"><span data-lang="zh">拼写</span><span class="nav-en" data-lang="en">Spelling</span></a>
+<a href="../12-writing/13.html"><span data-lang="zh">短信语言</span><span class="nav-en" data-lang="en">Texting</span></a>
+<a href="../12-writing/14.html"><span data-lang="zh">现代英语拼写</span><span class="nav-en" data-lang="en">Current English Spelling</span></a>
+<a href="../12-writing/15.html"><span data-lang="zh">拼写读音</span><span class="nav-en" data-lang="en">Spelling Pronunciations</span></a>
+<a href="../12-writing/16.html"><span data-lang="zh">伪文字</span><span class="nav-en" data-lang="en">Pseudo-Writing</span></a>
+</div></div>
+</nav></aside>
+<main class="main-content"><article class="article">
+<div class="breadcrumb"><a href="../../index.html"><span data-lang="zh">首页</span><span data-lang="en">Home</span></a> / <a href="index.html"><span data-lang="zh">计算语言学</span><span data-lang="en">Computational Linguistics</span></a> / <span data-lang="zh">计算句法学</span><span data-lang="en">Computational Syntax</span></div>
+<div class="label"><span data-lang="zh">第11章 · 主题06</span><span data-lang="en">CHAPTER 11 · TOPIC 06</span></div>
+<h1><span data-lang="zh">计算句法学</span><span data-lang="en">Computational Syntax</span></h1>
+
+<div class="article-body"><div class="lang-panel" data-lang="zh"><h2>核心概念</h2><p>计算句法学用形式语法、解析器或机器学习模型表示句子结构。解析结果可用于信息抽取、翻译和语法检查，但歧义、口语省略和跨语言差异都会增加难度。</p></div><div class="lang-panel" data-lang="en"><h2>Core Idea</h2><p>Computational syntax represents sentence structure with formal grammars, parsers, or machine-learning models. Parsing supports information extraction, translation, and grammar checking, while ambiguity, spoken ellipsis, and cross-linguistic variation make it difficult.</p></div></div>
+</article></main>
+<script src="../../js/main.js"></script>
+</body></html>
